@@ -1,0 +1,26 @@
+<% include partials/head %>
+   <% include partials/header %>
+
+   <% if(entries.length) {%>
+      <% entries.forEach(function(entry){%>
+         <div class="panel panel-primary">
+            <div class="panel-heading">
+               <%= entry.title%>
+               <div class="pull-right">
+                 Ingreso: <%= entry.published%>
+               </div>
+            </div>
+            <div class="panel-body">
+              Precio: <%= entry.content%>
+            </div>
+            <div class="panel-body">
+              Foto: <%= entry.url%>
+            </div>
+          
+         </div>
+      <%})%>
+   <%} else {%>
+      <p>No hay productos cargados</p>
+   <%}%>
+
+<% include partials/footer %>

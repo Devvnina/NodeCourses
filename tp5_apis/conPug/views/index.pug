@@ -1,0 +1,11 @@
+- var currentUrl = '/new-entry'
+
+   block content
+      .container
+         h1 Productos
+         each prd in entries
+            h3=prd.title
+            p=prd.content                                
+             
+
+a(class={active: currentUrl === '/new-entry'} href='/new-entry') Agregar productos

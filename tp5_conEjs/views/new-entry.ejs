@@ -1,0 +1,26 @@
+<% include partials/head %>
+   <% include partials/header %>
+
+   <div class="col-xs-8 col-xs-offset-2">
+      <h2 class="text-center">Ingrese nuevo producto</h2>
+
+      <form method="post">
+         <div class="form-group">
+            <label for="title">Titulo: </label>
+            <input type="text" name="title" id="title" class="form-control" placeholder="Entry a new Title" required>
+         </div>
+         <div class="form-group">
+            <label for="body">Precio: </label>
+            <input type="text" name="body" rows="3"  id="body" class="form-control" required>
+         </div>
+         <div class="form-group">
+            <label for="url">Url: </label>
+            <input type="text" name="url" rows="3"  id="url" class="form-control" required>
+         </div>
+         <div class="form-group">
+            <input type="submit"  value="Agregar Producto" class="btn btn-primary">
+         </div>
+      </form>
+   </div>
+
+<% include partials/footer %>
